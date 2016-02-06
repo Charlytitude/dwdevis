@@ -1,0 +1,1269 @@
+@charset "utf-8";
+/* CSS Document */
+
+.orange {color: #ff6600;} 
+.bleu{color: #000080;}
+
+/* http://dmouronval.developpez.com/tutoriels/css/messages-personnalises/ */
+div.devis-messages {margin-top:10px;}
+
+div.devis-success-message, div.devis-error-message {border: 1px solid; margin-bottom:20px}
+div.devis-success-message p, div.devis-error-message p {margin:10px 20px 10px 20px;}
+
+div.devis-error-message{color:#ff0000; background-color: #ffdbe0;}
+div.devis-success-message{color:#4F8A10; background-color:#DFF2BF;}
+ul li{
+	list-style:none;}
+
+#button_form{
+    color: #FFFFFF;
+    float: right;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 15px;
+    width: auto;
+}
+ 
+/*.column_2{
+	margin-left: 40px;
+	background-color:#FF7D00;
+	width: 28%;
+	height: 300px;} 
+	
+.text_column_2{
+	padding-top:145px;
+	padding-left:40px;}	
+	
+.text_column_2 h4{
+	color:#FFF;}*/
+ 
+input{
+	width:587x !important;}
+	
+input.submita {
+    background-color: #FF7D00;
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    height: 50px; 
+    margin-left: 0px !important;
+    width: auto;
+	padding:10px !important;}
+
+input.submitb {
+    background-color: #1C2443 !important;
+	color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    height: 50px;
+    margin-left: 0px !important;
+    width: auto;
+	padding:10px !important;}
+	
+input.submitc {
+    background-color: #FF7D00;
+    color: #FFFFFF;
+    float: right;
+    font-size: 14px;
+    height: 50px; 
+    margin-left: 0px !important;
+    width: auto;
+	padding:10px !important;}
+
+		
+.dommages ul li{
+	text-transform: uppercase;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:1,4em;}
+	
+.recap_gauche{
+	width:300px;
+	height:100%;
+	float:left; 
+	}
+	
+.recap_droite{
+	margin-left:350px;
+	}
+	
+.recap_gauche h4, .recap_droite h4{
+margin-bottomp: 30px; 
+}
+
+.recap_gauche ul, .recap_droite ul{
+margin-bottom:15px;
+margin-top: 15px; 
+}
+
+.recap_validation{
+float:left;
+}
+
+label.error{color:#D8000C;}
+
+form.form-devis ul {list-style-type: none; list-style-image: none}
+form.form-devis ul li {clear:both}
+
+form#devis_identification input[type='text'], select{width:587px}
+form#devis_identification ul li label{float:left}
+form#devis_identification ul li span{float:right}
+
+form#devis_dommage select{width:325px; height:40px; padding-top:8px;}
+form#devis_dommage textarea{height:100px}
+
+/* 1ère page : "Vous" / "Votre véhicule" */
+.devis h4{color:#000080; margin:10px 0 10px 0;}
+
+div#dommage {background-color:#FF7D00; padding:25px; color:#ffffff;}
+/*div#dommage h1 h2 h3 h4 h5 h6 p label {color:#ffffff;}*/
+div#dommage h4, div#dommage p, div#dommage span, div#dommage label, div#dommage a {color:#ffffff;}
+div#dommage span.small{font-size:11px;font-style:italic;}
+
+/* Votre devis en 3 étapes */
+div#devis_wrapper h2{}
+/* Texte explicatif de chaque étape (ex : Etape 1 : Complétez les champs... ) */
+div#devis_wrapper h3.step-title{margin-bottom:20px;}
+
+.devis-map-wrapper{background-color: #1C2443; padding-top:15px;}
+.devis-map{margin-left:60px;}
+
+h6.step-title{margin-bottom:30px;}
+
+.btn-group li{float:right}
+
+
+.devis_recap_element {
+	float:left;width:115px;
+	 
+	 margin: 10px 0px  0px  10px;
+	 /*border: 1px solid black;*/
+	 padding:10px 5px 5px 10px;
+	 background-color:#1C1646;
+	 color:#E0DFE7;
+	 height:40px;
+	 font-size:15px;
+}
+ 
+.devis_recap_a_faire {
+	float:left;
+	width:165px;
+	 
+	 margin: 10px 0px  0px  0px;
+	/*border: 1px solid black;*/
+	 padding:10px 5px 5px 10px;
+	 height:40px;
+	 background-color:#E0DFE7;
+	 color:#1C1646;
+	 font-size:12px;
+}
+.devis_titre_exterieur{
+	  color:#1C1646;
+	 font-size:26px;
+	 font-weight:bold;
+	 margin: 10px 0px  0px  15px;
+	 height:60px;
+}
+
+.devis-map {
+	height:505px;
+	/*width:342px;*/
+	/*float:left;*/
+	/*background-color:#ACABBD;*/
+    position:relative;
+	/*border: 1px solid black;*/
+}
+.carrosserie1 {
+	position:absolute;	
+	left:108px;
+	top:20px;
+}
+
+.element1_off, .element1_on , .element1_over { display:block; float:left; background:url(../img/carosserie/devis_element1-off.png) no-repeat left top; width:142px;height:36px; }
+.element1_on { background:url(../img/carosserie/devis_element1-on.png) no-repeat left top;}
+.element1_over { background:url(../img/carosserie/devis_element1-over.png) no-repeat left top; }
+.element1_off:hover , .element1_on:hover, .element1_over:hover{ background:url(../img/carosserie/devis_element1-over.png) no-repeat left top;}
+
+.carrosserie2 {
+	position:absolute;
+	left:81px;
+	top:77px;
+}
+.element2_off, .element2_on  , .element2_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element2-off.png) no-repeat left top;
+	width:56px;
+	height:36px;
+}
+.element2_on {
+	background:url(../img/carosserie/devis_element2-on.png) no-repeat left top;
+}
+.element2_over {
+	background:url(../img/carosserie/devis_element2-over.png) no-repeat left top;
+}
+.element2_off:hover, .element2_on:hover {
+	background:url(../img/carosserie/devis_element2-over.png) no-repeat left top;
+}
+.carrosserie3 {
+	position:absolute;
+	left:142px;
+	top:57px;
+}
+.element3_off, .element3_on  , .element3_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element3-off.png) no-repeat left top;
+	width:106px;
+	height:86px;
+}
+.element3_on {
+	background:url(../img/carosserie/devis_element3-on.png) no-repeat left top;
+}
+.element3_over {
+	background:url(../img/carosserie/devis_element3-over.png) no-repeat left top;
+}
+.element3_off:hover , .element3_on:hover{
+	background:url(../img/carosserie/devis_element3-over.png) no-repeat left top;
+}
+
+.carrosserie4 {
+	position:absolute;
+	left:231px;
+	top:77px;
+}
+.element4_off, .element4_on  , .element4_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element4-off.png) no-repeat left top;
+	width: 56px;
+	height:36px;
+}
+.element4_on {
+	background:url(../img/carosserie/devis_element4-on.png) no-repeat left top;
+}
+.element4_over {
+	background:url(../img/carosserie/devis_element4-over.png) no-repeat left top;
+}
+.element4_off:hover , .element4_on:hover{
+	background:url(../img/carosserie/devis_element4-over.png) no-repeat left top;
+}
+
+.carrosserie5 {
+	position:absolute;
+	left:8px;
+	top:118px;
+}
+.element5_off, .element5_on , .element5_over  {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element5-off.png) no-repeat left top;
+	width: 56px;
+	height:56px;
+}
+.element5_on {
+	background:url(../img/carosserie/devis_element5-on.png) no-repeat left top;
+}
+.element5_over {
+	background:url(../img/carosserie/devis_element5-over.png) no-repeat left top;
+}
+.element5_off:hover , .element5_on:hover{
+	background:url(../img/carosserie/devis_element5-over.png) no-repeat left top;
+}
+.carrosserie6 {
+	position:absolute;
+	left:28px;
+	top: 100px;
+}
+.element6_off, .element6_on , .element6_over  {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element6-off.png) no-repeat left top;
+	width: 58px;
+	height:86px;
+}
+.element6_on {
+	background:url(../img/carosserie/devis_element6-on.png) no-repeat left top;
+}
+.element6_over {
+	background:url(../img/carosserie/devis_element6-over.png) no-repeat left top;
+}
+.element6_off:hover , .element6_on:hover{
+	background:url(../img/carosserie/devis_element6-over.png) no-repeat left top;
+}
+.carrosserie7 {
+	position:absolute;
+	left:98px;
+	top: 147px;
+}
+.element7_off, .element7_on  , .element7_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element7-off.png) no-repeat left top;
+	width: 25px;
+	height:26px;
+}
+.element7_on {
+	background:url(../img/carosserie/devis_element7-on.png) no-repeat left top;
+}
+.element7_over {
+	background:url(../img/carosserie/devis_element7-over.png) no-repeat left top;
+}
+.element7_off:hover, .element7_on:hover {
+	background:url(../img/carosserie/devis_element7-over.png) no-repeat left top;
+}
+.carrosserie8 {
+	position:absolute;
+	left:127px;
+	top: 80px;
+}
+.element8_off, .element8_on  , .element8_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element8-off.png) no-repeat left top;
+	width: 95px;
+	height:86px;
+}
+.element8_on {
+	background:url(../img/carosserie/devis_element8-on.png) no-repeat left top;
+}
+.element8_over {
+	background:url(../img/carosserie/devis_element8-over.png) no-repeat left top;
+}
+.element8_off:hover, .element8_on:hover {
+	background:url(../img/carosserie/devis_element8-over.png) no-repeat left top;
+}
+.carrosserie9 {
+position:absolute;
+left:228px;
+top: 147px;
+}
+.element9_off, .element9_on , .element9_over  {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element9-off.png) no-repeat left top;
+	width: 25px;
+	height:26px;
+}
+.element9_on {
+	background:url(../img/carosserie/devis_element9-on.png) no-repeat left top;
+}
+.element9_over {
+	background:url(../img/carosserie/devis_element9-over.png) no-repeat left top;
+}
+.element9_off:hover , .element9_on:hover{
+	background:url(../img/carosserie/devis_element9-over.png) no-repeat left top;
+}
+.carrosserie10 {
+position:absolute;
+left:253px;
+top: 100px;
+}
+.element10_off, .element10_on  , .element10_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element10-off.png) no-repeat left top;
+	width: 56px;
+	height:86px;
+}
+.element10_on {
+	background:url(../img/carosserie/devis_element10-on.png) no-repeat left top;
+}
+.element10_over {
+	background:url(../img/carosserie/devis_element10-over.png) no-repeat left top;
+}
+.element10_off:hover, .element10_on:hover {
+	background:url(../img/carosserie/devis_element10-over.png) no-repeat left top;
+}
+.carrosserie11 {
+position:absolute;
+left:291px;
+top: 119px;
+}
+.element11_off, .element11_on  , .element11_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element11-off.png) no-repeat left top;
+	width: 56px;
+	height:46px;
+}
+.element11_on {
+	background:url(../img/carosserie/devis_element11-on.png) no-repeat left top;
+}
+.element11_over {
+	background:url(../img/carosserie/devis_element11-over.png) no-repeat left top;
+}
+.element11_off:hover, .element11_on:hover {
+	background:url(../img/carosserie/devis_element11-over.png) no-repeat left top;
+}
+.carrosserie12 {
+position:absolute;
+left:17px;
+top: 190px;
+}
+.element12_off, .element12_on , .element12_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element12-off.png) no-repeat left top;
+	width: 26px;
+	height:126px;
+}
+.element12_on {
+	background:url(../img/carosserie/devis_element12-on.png) no-repeat left top;
+}
+.element12_over {
+	background:url(../img/carosserie/devis_element12-over.png) no-repeat left top;
+}
+.element12_off:hover , .element12_on:hover{
+	background:url(../img/carosserie/devis_element12-over.png) no-repeat left top;
+}
+.carrosserie13 {
+position:absolute;
+left:31px;
+top: 182px;
+}
+.element13_off, .element13_on , .element13_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element13-off.png) no-repeat left top;
+	width: 83px;
+	height:86px;
+}
+.element13_on {
+	background:url(../img/carosserie/devis_element13-on.png) no-repeat left top;
+}
+.element13_over {
+	background:url(../img/carosserie/devis_element13-over.png) no-repeat left top;
+}
+.element13_off:hover , .element13_on:hover{
+	background:url(../img/carosserie/devis_element13-over.png) no-repeat left top;
+}
+.carrosserie14 {
+position:absolute;
+left: 29px;
+top: 262px;
+}
+.element14_off, .element14_on  , .element14_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element14-off.png) no-repeat left top;
+	width: 86px;
+	height:76px;
+}
+.element14_on {
+	background:url(../img/carosserie/devis_element14-on.png) no-repeat left top;
+}
+.element14_over {
+	background:url(../img/carosserie/devis_element14-over.png) no-repeat left top;
+}
+.element14_off:hover , .element14_on:hover{
+	background:url(../img/carosserie/devis_element14-over.png) no-repeat left top;
+}
+.carrosserie15 {
+position:absolute;
+left:8px;
+top: 319px;
+}
+.element15_off, .element15_on , .element15_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element15-off.png) no-repeat left top;
+	width: 50px;
+	height:50px;
+}
+.element15_on {
+	background:url(../img/carosserie/devis_element15-on.png) no-repeat left top;
+}
+.element15_over {
+	background:url(../img/carosserie/devis_element15-over.png) no-repeat left top;
+}
+.element15_off:hover, .element15_on:hover {
+	background:url(../img/carosserie/devis_element15-over.png) no-repeat left top;
+}
+.carrosserie16 {
+position:absolute;
+left:45px;
+top: 318px;
+}
+.element16_off, .element16_on  , .element16_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element16-off.png) no-repeat left top;
+	width: 70px;
+	height:96px;
+}
+.element16_on {
+	background:url(../img/carosserie/devis_element16-on.png) no-repeat left top;
+}
+.element16_over {
+	background:url(../img/carosserie/devis_element16-over.png) no-repeat left top;
+}
+.element16_off:hover , .element16_on:hover{
+	background:url(../img/carosserie/devis_element16-over.png) no-repeat left top;
+}
+.carrosserie17 {
+position:absolute;
+left:101px;
+top: 180px;
+}
+.element17_off, .element17_on , .element17_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element17-off.png) no-repeat left top;
+	width: 36px;
+	height:206px;
+}
+.element17_on {
+	background:url(../img/carosserie/devis_element17-on.png) no-repeat left top;
+}
+.element17_over {
+	background:url(../img/carosserie/devis_element17-over.png) no-repeat left top;
+}
+.element17_off:hover, .element17_on:hover {
+	background:url(../img/carosserie/devis_element17-over.png) no-repeat left top;
+}
+.carrosserie18 {
+position:absolute;
+left:127px;
+top: 165px;
+}
+.element18_off, .element18_on , .element18_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element18-off.png) no-repeat left top;
+	width: 96px;
+	height:49px;
+}
+.element18_on {
+	background:url(../img/carosserie/devis_element18-on.png) no-repeat left top;
+}
+.element18_over {
+	background:url(../img/carosserie/devis_element18-over.png) no-repeat left top;
+}
+.element18_off:hover , .element18_on:hover{
+	background:url(../img/carosserie/devis_element18-over.png) no-repeat left top;
+}
+.carrosserie19 {
+position:absolute;
+left:137px;
+top: 220px;
+}
+.element19_off, .element19_on  , .element19_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element19-off.png) no-repeat left top;
+	width: 76px;
+	height:106px;
+}
+.element19_on {
+	background:url(../img/carosserie/devis_element19-on.png) no-repeat left top;
+}
+.element19_over {
+	background:url(../img/carosserie/devis_element19-over.png) no-repeat left top;
+}
+.element19_off:hover, .element19_on:hover {
+	background:url(../img/carosserie/devis_element19-over.png) no-repeat left top;
+}
+.carrosserie20 {
+position:absolute;
+left:129px;
+top: 329px;
+}
+.element20_off, .element20_on , .element20_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element20-off.png) no-repeat left top;
+	width: 90px;
+	height:60px;
+}
+.element20_on {
+	background:url(../img/carosserie/devis_element20-on.png) no-repeat left top;
+}
+.element20_over {
+	background:url(../img/carosserie/devis_element20-over.png) no-repeat left top;
+}
+.element20_off:hover , .element20_on:hover{
+	background:url(../img/carosserie/devis_element20-over.png) no-repeat left top;
+}
+.carrosserie21 {
+position:absolute;
+left:212px;
+top: 184px;
+}
+.element21_off, .element21_on , .element21_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element21-off.png) no-repeat left top;
+	width: 40px;
+	height:195px;
+}
+.element21_on {
+	background:url(../img/carosserie/devis_element21-on.png) no-repeat left top;
+}
+.element21_over {
+	background:url(../img/carosserie/devis_element21-over.png) no-repeat left top;
+}
+.element21_off:hover , .element21_on:hover{
+	background:url(../img/carosserie/devis_element21-over.png) no-repeat left top;
+}
+.carrosserie22 {
+position:absolute;
+left:232px;
+top: 182px;
+}
+.element22_off, .element22_on  , .element22_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element22-off.png) no-repeat left top;
+	width: 82px;
+	height:80px;
+}
+.element22_on {
+	background:url(../img/carosserie/devis_element22-on.png) no-repeat left top;
+}
+.element22_over {
+	background:url(../img/carosserie/devis_element22-over.png) no-repeat left top;
+}
+.element22_off:hover, .element22_on:hover {
+	background:url(../img/carosserie/devis_element22-over.png) no-repeat left top;
+}
+.carrosserie23 {
+position:absolute;
+left:232px;
+top: 264px;
+}
+.element23_off, .element23_on  , .element23_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element23-off.png) no-repeat left top;
+	width: 82px;
+	height:80px;
+}
+.element23_on {
+	background:url(../img/carosserie/devis_element23-on.png) no-repeat left top;
+}
+.element23_over {
+	background:url(../img/carosserie/devis_element23-over.png) no-repeat left top;
+}
+.element23_off:hover, .element23_on:hover {
+	background:url(../img/carosserie/devis_element23-over.png) no-repeat left top;
+}
+.carrosserie24 {
+position:absolute;
+left:229px;
+top: 314px;
+}
+.element24_off, .element24_on  , .element24_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element24-off.png) no-repeat left top;
+	width: 70px;
+	height:95px;
+}
+.element24_on {
+	background:url(../img/carosserie/devis_element24-on.png) no-repeat left top;
+}
+.element24_over {
+	background:url(../img/carosserie/devis_element24-over.png) no-repeat left top;
+}
+.element24_off:hover , .element24_on:hover{
+	background:url(../img/carosserie/devis_element24-over.png) no-repeat left top;
+}
+.carrosserie25 {
+position:absolute;
+left:294px;
+top: 319px;
+}
+.element25_off, .element25_on  , .element25_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element25-off.png) no-repeat left top;
+	width: 45px;
+	height:45px;
+}
+.element25_on {
+	background:url(../img/carosserie/devis_element25-on.png) no-repeat left top;
+}
+.element25_over {
+	background:url(../img/carosserie/devis_element25-over.png) no-repeat left top;
+}
+.element25_off:hover , .element25_on:hover{
+	background:url(../img/carosserie/devis_element25-over.png) no-repeat left top;
+}
+.carrosserie26 {
+position:absolute;
+left:320px;
+top: 192px;
+}
+.element26_off, .element26_on , .element26_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element26-off.png) no-repeat left top;
+	width: 15px;
+	height:125px;
+}
+.element26_on {
+	background:url(../img/carosserie/devis_element26-on.png) no-repeat left top;
+}
+.element26_over {
+	background:url(../img/carosserie/devis_element26-over.png) no-repeat left top;
+}
+.element26_off:hover, .element26_on:hover {
+	background:url(../img/carosserie/devis_element26-over.png) no-repeat left top;
+}
+.carrosserie27 {
+position:absolute;
+left:80px;
+top: 413px;
+}
+.element27_off, .element27_on  , .element27_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element27-off.png) no-repeat left top;
+	width: 30px;
+	height:25px;
+}
+.element27_on {
+	background:url(../img/carosserie/devis_element27-on.png) no-repeat left top;
+}
+.element27_over {
+	background:url(../img/carosserie/devis_element27-over.png) no-repeat left top;
+}
+.element27_off:hover, .element27_on:hover {
+	background:url(../img/carosserie/devis_element27-over.png) no-repeat left top;
+}
+.carrosserie28 {
+position:absolute;
+left:130px;
+top: 393px;
+}
+.element28_off, .element28_on , .element28_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element28-off.png) no-repeat left top;
+	width: 90px;
+	height:38px;
+}
+.element28_on {
+	background:url(../img/carosserie/devis_element28-on.png) no-repeat left top;
+}
+.element28_over {
+	background:url(../img/carosserie/devis_element28-over.png) no-repeat left top;
+}
+.element28_off:hover, .element28_on:hover {
+	background:url(../img/carosserie/devis_element28-over.png) no-repeat left top;
+}
+.carrosserie29 {
+position:absolute;
+left:232px;
+top: 412px;
+}
+.element29_off, .element29_on , .element29_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element29-off.png) no-repeat left top;
+	width: 30px;
+	height:28px;
+}
+.element29_on {
+	background:url(../img/carosserie/devis_element29-on.png) no-repeat left top;
+}
+.element29_over {
+	background:url(../img/carosserie/devis_element29-over.png) no-repeat left top;
+}
+.element29_off:hover , .element29_on:hover{
+	background:url(../img/carosserie/devis_element29-over.png) no-repeat left top;
+}
+.carrosserie30 {
+position:absolute;
+left:110px;
+top: 442px;
+}
+.element30_off, .element30_on  , .element30_over{
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element30-off.png) no-repeat left top;
+	width: 125px;
+	height:28px;
+}
+.element30_on {
+	background:url(../img/carosserie/devis_element30-on.png) no-repeat left top;
+}
+.element30_over {
+	background:url(../img/carosserie/devis_element30-over.png) no-repeat left top;
+}
+.element30_off:hover , .element30_on:hover{
+	background:url(../img/carosserie/devis_element30-over.png) no-repeat left top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trenteetun {
+position:absolute;
+left:280px;
+top:  -52px;
+z-index: 20;
+}
+.element31_off, .element31_on  , .element31_over{
+	display:block;
+	float:left;
+	background:url(images/grele.png) no-repeat left top;
+	width: 160px;
+	height:149px;
+}
+.element31_on {
+	background:url(images/grele-hover.png) no-repeat left top;
+}
+.element31_over {
+	background:url(images/grele-hover.png) no-repeat left top;
+}
+.element31_off:hover , .element31_on:hover{
+	background:url(images/grele-hover.png) no-repeat left top;
+}
+.devis_exterieur_description   {
+	height:505px;
+	width:350px;
+	border: 1px solid green;
+	float:left;
+	background-color:#342E5A;
+
+}
+ .devis_exterieur_description H2{
+	color:#FFFFFF;
+	font-size:14px;
+	margin:  15px 0px 0px 20px;
+	display:block;
+	line-height: 15px;
+}
+ .devis_exterieur_description H3{
+	color:#FFFFFF;
+	font-size:12px;
+	margin:  5px 0px 0px 20px;
+	display:block;
+	line-height:  10px;
+}
+ .devis_exterieur_description textarea{
+	color:#2E2366;
+	font-size:12px;
+	margin:  5px 0px 0px 10px;
+	display:block;
+	width:300px;
+	height:100px;
+
+}
+ .devis_exterieur_description .valider{
+
+	margin:  5px 30px 0px 10px;
+	display:block;
+	width:144px;
+	height:46px;
+	float:right;
+
+}
+.centun {
+	position:absolute;
+	left:121px;
+	top:21px;
+	/*border: 1px solid black;*/
+}
+.element101_off, .element101_on , .element101_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element101-off.png) no-repeat left top;
+	width:112px;
+	height:56px;
+}
+.element101_on {
+	background:url(../img/carosserie/devis_element101-on.png) no-repeat left top;
+}
+.element101_over {
+	background:url(../img/carosserie/devis_element101-over.png) no-repeat left top;
+}
+.element101_off:hover , .element101_on:hover, .element101_over:hover{
+	background:url(../img/carosserie/devis_element101-over.png) no-repeat left top;
+}
+.centdeux {
+	position:absolute;
+	left: 21px;
+	top:101px;
+	/*border: 1px solid black;*/
+}
+.element102_off, .element102_on , .element102_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element102-off.png) no-repeat left top;
+	width:92px;
+	height:86px;
+}
+.element102_on {
+	background:url(../img/carosserie/devis_element102-on.png) no-repeat left top;
+}
+.element102_over {
+	background:url(../img/carosserie/devis_element102-over.png) no-repeat left top;
+}
+.element102_off:hover , .element102_on:hover, .element102_over:hover{
+	background:url(../img/carosserie/devis_element102-over.png) no-repeat left top;
+}
+.centtrois {
+position:absolute;
+left: 21px;
+top:191px;
+/*border: 1px solid black;*/
+}
+.element103_off, .element103_on , .element103_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element103-off.png) no-repeat left top;
+	width:92px;
+	height:86px;
+}
+.element103_on {
+	background:url(../img/carosserie/devis_element103-on.png) no-repeat left top;
+}
+.element103_over {
+	background:url(../img/carosserie/devis_element103-over.png) no-repeat left top;
+}
+.element103_off:hover , .element103_on:hover, .element103_over:hover{
+	background:url(../img/carosserie/devis_element103-over.png) no-repeat left top;
+}
+.centquatre{
+position:absolute;
+left: 110px;
+top:83px;
+/*border: 1px solid black;*/
+}
+.element104_off, .element104_on , .element104_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element104-off.png) no-repeat left top;
+	width:72px;
+	height:96px;
+}
+.element104_on {
+	background:url(../img/carosserie/devis_element104-on.png) no-repeat left top;
+}
+.element104_over {
+	background:url(../img/carosserie/devis_element104-over.png) no-repeat left top;
+}
+.element104_off:hover , .element104_on:hover, .element104_over:hover{
+	background:url(../img/carosserie/devis_element104-over.png) no-repeat left top;
+}
+.centcinq{
+position:absolute;
+left: 178px;
+top:83px;
+/*border: 1px solid black;*/
+}
+.element105_off, .element105_on , .element105_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element105-off.png) no-repeat left top;
+	width:72px;
+	height:96px;
+}
+.element105_on {
+	background:url(../img/carosserie/devis_element105-on.png) no-repeat left top;
+}
+.element105_over {
+	background:url(../img/carosserie/devis_element105-over.png) no-repeat left top;
+}
+.element105_off:hover , .element105_on:hover, .element105_over:hover{
+	background:url(../img/carosserie/devis_element105-over.png) no-repeat left top;
+}
+.centsix{
+position:absolute;
+left: 117px;
+top:105px;
+/*border: 1px solid black;*/
+}
+.element106_off, .element106_on , .element106_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element106-off.png) no-repeat left top;
+	width:52px;
+	height:70px;
+}
+.element106_on {
+	background:url(../img/carosserie/devis_element106-on.png) no-repeat left top;
+}
+.element106_over {
+	background:url(../img/carosserie/devis_element106-over.png) no-repeat left top;
+}
+.element106_off:hover , .element106_on:hover, .element106_over:hover{
+	background:url(../img/carosserie/devis_element106-over.png) no-repeat left top;
+}
+.centsept{
+position:absolute;
+left: 155px;
+top:81px;
+/*border: 1px solid black;*/
+}
+.element107_off, .element107_on , .element107_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element107-off.png) no-repeat left top;
+	width:52px;
+	height:99px;
+}
+.element107_on {
+	background:url(../img/carosserie/devis_element107-on.png) no-repeat left top;
+}
+.element107_over {
+	background:url(../img/carosserie/devis_element107-over.png) no-repeat left top;
+}
+.element107_off:hover , .element107_on:hover, .element107_over:hover{
+	background:url(../img/carosserie/devis_element107-over.png) no-repeat left top;
+}
+.centhuit{
+position:absolute;
+left: 184px;
+top:100px;
+/*border: 1px solid black;*/
+}
+.element108_off, .element108_on , .element108_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element108-off.png) no-repeat left top;
+	width:52px;
+	height:70px;
+}
+.element108_on {
+	background:url(../img/carosserie/devis_element108-on.png) no-repeat left top;
+}
+.element108_over {
+	background:url(../img/carosserie/devis_element108-over.png) no-repeat left top;
+}
+.element108_off:hover , .element108_on:hover, .element108_over:hover{
+	background:url(../img/carosserie/devis_element108-over.png) no-repeat left top;
+}
+.centneuf{
+position:absolute;
+left: 252px;
+top:100px;
+/*border: 1px solid black;*/
+}
+.element109_off, .element109_on , .element109_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element109-off.png) no-repeat left top;
+	width:82px;
+	height:80px;
+}
+.element109_on {
+	background:url(../img/carosserie/devis_element109-on.png) no-repeat left top;
+}
+.element109_over {
+	background:url(../img/carosserie/devis_element109-over.png) no-repeat left top;
+}
+.element109_off:hover , .element109_on:hover, .element109_over:hover{
+	background:url(../img/carosserie/devis_element109-over.png) no-repeat left top;
+}
+.centdix{
+position:absolute;
+left: 252px;
+top:190px;
+/*border: 1px solid black;*/
+}
+.element110_off, .element110_on , .element110_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element110-off.png) no-repeat left top;
+	width:85px;
+	height:70px;
+}
+.element110_on {
+	background:url(../img/carosserie/devis_element110-on.png) no-repeat left top;
+}
+.element110_over {
+	background:url(../img/carosserie/devis_element110-over.png) no-repeat left top;
+}
+.element110_off:hover , .element110_on:hover, .element110_over:hover{
+	background:url(../img/carosserie/devis_element110-over.png) no-repeat left top;
+}
+.centonze{
+position:absolute;
+left: 111px;
+top:184px;
+/*border: 1px solid black;*/
+}
+.element111_off, .element111_on , .element111_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element111-off.png) no-repeat left top;
+	width:135px;
+	height:60px;
+}
+.element111_on {
+	background:url(../img/carosserie/devis_element111-on.png) no-repeat left top;
+}
+.element111_over {
+	background:url(../img/carosserie/devis_element111-over.png) no-repeat left top;
+}
+.element111_off:hover , .element111_on:hover, .element111_over:hover{
+	background:url(../img/carosserie/devis_element111-over.png) no-repeat left top;
+}
+.centdouze{
+position:absolute;
+left: 114px;
+top:193px;
+/*border: 1px solid black;*/
+}
+.element112_off, .element112_on , .element112_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element112-off.png) no-repeat left top;
+	width:135px;
+	height:60px;
+}
+.element112_on {
+	background:url(../img/carosserie/devis_element112-on.png) no-repeat left top;
+}
+.element112_over {
+	background:url(../img/carosserie/devis_element112-over.png) no-repeat left top;
+}
+.element112_off:hover , .element112_on:hover, .element112_over:hover{
+	background:url(../img/carosserie/devis_element112-over.png) no-repeat left top;
+}
+.centtreize{
+position:absolute;
+left: 118px;
+top:253px;
+/*border: 1px solid black;*/
+}
+.element113_off, .element113_on , .element113_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element113-off.png) no-repeat left top;
+	width:125px;
+	height:50px;
+}
+.element113_on {
+	background:url(../img/carosserie/devis_element113-on.png) no-repeat left top;
+}
+.element113_over {
+	background:url(../img/carosserie/devis_element113-over.png) no-repeat left top;
+}
+.element113_off:hover , .element113_on:hover, .element113_over:hover{
+	background:url(../img/carosserie/devis_element113-over.png) no-repeat left top;
+}
+.centquatorze{
+position:absolute;
+left: 141px;
+top:305px;
+/*border: 1px solid black;*/
+}
+.element114_off, .element114_on , .element114_over {
+	display:block;
+	float:left;
+	background:url(../img/carosserie/devis_element114-off.png) no-repeat left top;
+	width:125px;
+	height:100px;
+}
+.element114_on {
+	background:url(../img/carosserie/devis_element114-on.png) no-repeat left top;
+}
+.element114_over {
+	background:url(../img/carosserie/devis_element114-over.png) no-repeat left top;
+}
+.element114_off:hover , .element114_on:hover, .element114_over:hover{
+	background:url(../img/carosserie/devis_element114-over.png) no-repeat left top;
+}
+.centcinquante{
+position:absolute;	
+left: 91px;
+top:435px;
+/*border: 1px solid black;*/
+}
+/*
+==================================================
+	PAGES SERVICES +==================================================
+*/
+ 
+.sous_titre2  {
+	color:#2E2366;
+	font-size:20px;
+ 	display:block;
+ 	text-align:right;
+	margin:  0px 0px 10px 0px;
+	/*border: 1px solid black;*/
+} 
+ 
+/*
+==================================================
+	Contact
+==================================================
+*/
+/*//////////////////////////////////// RAPPEL CSS 3 ///////////////////////////////////////*/
+	/* Rounded corners 
+	-moz-border-radius:		5px;	
+	-webkit-border-radius:	5px;	
+	-o-border-radius:		5px;	
+	-khtml-border-radius:	5px;
+	-ms-border-radius:		5px;	
+	-chrome-border-radius:	5px;
+	border-radius:			5px;*/
+	
+	/* Shadow box 
+	-moz-box-shadow:		0 2px 2px rgba(0,0,0,.5);
+	-webkit-box-shadow:		0 2px 2px rgba(0,0,0,.5);
+	-ms-box-shadow:			0 2px 2px rgba(0,0,0,.5);
+	-chrome-box-shadow:		0 2px 2px rgba(0,0,0,.5);
+	-o-border-box-shadow:	0 2px 2px rgba(0,0,0,.5);
+	-khtml-box-shadow:		0 2px 2px rgba(0,0,0,.5);
+	box-shadow:				0 2px 2px rgba(0,0,0,.5);*/
+	
+	/* Shadow Text 
+	-moz-text-shadow:		0 2px 2px rgba(0,0,0,.5);
+	-webkit-text-shadow:	0 2px 2px rgba(0,0,0,.5);
+	-ms-text-shadow:		0 2px 2px rgba(0,0,0,.5);
+	-chrome-btextox-shadow:	0 2px 2px rgba(0,0,0,.5);
+	-o-border-text-shadow:	0 2px 2px rgba(0,0,0,.5);
+	-khtml-text-shadow:		0 2px 2px rgba(0,0,0,.5);
+	text-shadow:			0 2px 2px rgba(0,0,0,.5);*/
+	
+	/*Transition
+	-moz-transition:		all .3s ease;
+	-webkit-transition:		all .3s ease;
+	-ms-transition:			all .3s ease;
+	-o-transition:			all .3s ease;
+	-khtml-transition:		all .3s ease;
+	-chrome-transition:		all .3s ease;
+	transition: 			all .3s ease;*/
+	
+	/*ease // linear // ease-in // ease-out // ease-in-out */
+	
+	/*Transform
+	-webkit-transform: 	scale(1);
+   -moz-transform: 		scale(1);
+   -o-transform: 		scale(1);
+   transform: 			scale(1);*/
+	
+	/*Opacity
+	opacity : 1;
+    -moz-opacity : 1;
+    -ms-filter: "alpha(opacity=100)"; /* IE 8 *//*
+    filter : alpha(opacity=100); /* IE < 8 */
+	
+/*//////////////////////// CODES COULEURS RVB WEB ///////////////////////////*/
+/*
+BLEU FONCE : #1b1646
+BLEU : #444c7e
+BLEU VIOLET : #7d789d
+BLEU VIOLET CLAIR : #e0dfe8
+GRIS VIOLET : #eeedf2
+---
+ORANGE : #FF6900
+*/
