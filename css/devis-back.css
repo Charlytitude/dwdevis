@@ -1,0 +1,46 @@
+/*
+Ici tu peux mettre ce que tu veux pour le backend
+A savoir que la liste des devis utilise des classes de tableaux déjà existantes dans WordPress
+
+Le détail d'un devis se trouve dans back/view-detail-static.php
+
+*/
+p{
+	font-size:15px !important;}
+a {
+	color:#FF7D00;}
+
+h2{
+	font-size:20px;
+	margin-bottom: 40px; }
+	
+#dommages{
+	float:left;
+	margin-left:30px; }
+
+#vehicule{
+	float:left;
+	margin-left:30px; }
+
+#client{
+	float:left;
+	margin-left:30px;
+	background-color:#333;
+	padding:0px 15px;
+	color:#FFF; }
+
+#actions{
+	float:left;
+	margin-left:30px;
+	}
+
+#actions a{
+	margin-top:15px;
+	font-size:18px;
+	color:#FFF;
+	background-color:#FF7D00;
+	padding:15px 15px;
+	text-decoration:none;}
+
+#actions a:hover{
+	background-color:#1C2443;}
